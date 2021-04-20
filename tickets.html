@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="index.js"></script>
+  <title>Media Database</title>
+  <style>
+    .cropped {
+      filter: brightness(50%);
+      height: 66vh !important;
+      /* height of container */
+      object-fit: cover;
+      object-position: 20% 10%;
+      /* try 20px 10px */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+  </style>
+</head>
+
+<body>
+ <header>
+  <div class="jumbotron jumbotron-fluid mb-0 bg-danger text-light">
+    <div class="container mx-auto">
+      <h1 class="display-5 mx-auto" style="width: 50%">Summer Ticket Pass Sale!</h1>
+      <p class="lead mx-auto" style="width: 50%">
+        Get your movie pass for the Summer!
+      </p>
+    </div>
+  </div>
+ </header>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link text-light h4 active px-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link text-light h4 px-5" href="movierating.html">Movies</a>
+      <a class="nav-link text-light h4 px-5" href="tvrating.html">TV Shows</a>
+
+    </div>
+  </div>
+</nav>
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Greg Gregingson">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">How Many Summer Passes Do You Want?</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>Email us if you wish to purchase more than 5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">If you have any questions or concerns, list them here.</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </form>
+  <button type="button" style="width:10em"class="btn btn-success">Purchase!</button>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
